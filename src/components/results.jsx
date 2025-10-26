@@ -22,7 +22,7 @@ const score= getScore();
         <div>
             <h2>Quiz Completed!</h2>
         
-            <p>Your Score : {score}/{questionBank.length}</p>
+            <p>Your Final Score : {score}/{questionBank.length}</p>
 
             <div>
                     {questionBank.map((item, index) => (
