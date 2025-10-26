@@ -2,38 +2,39 @@ import { useState } from "react";
 import Results from "./results";
 import Swal from "sweetalert2"; 
 function Quiz () {
-        const questionBank = [
+     const questionBank = [
             {
-                question: "What is the capital of France?",
-                options: ["Berlin", "London", "Paris", "Rome"],
-                answer: "Paris",
+                question: "Which planet is known as the Red Planet?",
+                options: ["Earth", "Venus", "Mars", "Jupiter"],
+                answer: "Mars",
             },
             {
-                question: "Which language is used for web apps?",
-                options: ["PHP", "Python", "Javascript", "All"],
-                answer: "All",
-            },
-            {
-                question: "What does JSX stand for?",
+                question: "What does HTML stand for?",
                 options: [
-                "JavaScript XML",
-                "Java Syntax eXtension",
-                "Just a Simple eXample",
-                "None of the above",
+                "HyperText Markup Language",
+                "HighText Machine Language",
+                "Hyperlink and Text Markup Language",
+                "Home Tool Markup Language",
                 ],
-                answer: "JavaScript XML",
+                answer: "HyperText Markup Language",
             },
             {
-                question: "Who developed React?",
-                options: ["Google", "Facebook", "Microsoft", "Twitter"],
-                answer: "Facebook",
+                question: "Which company developed Java?",
+                options: ["Sun Microsystems", "Microsoft", "Google", "IBM"],
+                answer: "Sun Microsystems",
             },
             {
-                question: "Which hook is used to manage state in a functional component?",
-                options: ["useEffect", "useState", "useContext", "useReducer"],
-                answer: "useState",
+                question: "Which keyword is used to declare a constant in JavaScript?",
+                options: ["var", "let", "const", "define"],
+                answer: "const",
             },
-        ];
+            {
+                question: "What is the output of 2 + '2' in JavaScript?",
+                options: ["4", "'22'", "Error", "Undefined"],
+                answer: "'22'",
+            },
+            ];
+
 
     const initialAnswers = [null, null, null, null, null];
     
